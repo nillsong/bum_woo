@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
-    'sendEmail',
-    'calculate',
+    'main', # append
+    'sendEmail', # append
+    'calculate', # append
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,8 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [], 
+        # 'DIRS': [os.path.join(BASE_DIR, 'templates')], # append
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
